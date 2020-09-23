@@ -21,7 +21,7 @@ for light in room:
 #For every [F] I find in your [report card] I'm going to put another [snake] in your {bed}.
 report_card = ["A", "C", "B", "F", "F", "F", "C", "A","A", "A"]
 snakes = 0; 
-print(f"\nSo far there are {snakes} in your bed, let's see how that changes once grandma looks at your report card!")
+print(f"\nSo far there are {snakes} snakes in your bed, let's see how that changes once grandma looks at your report card!")
 for grade in report_card:
     if grade =="F":
         snakes = snakes + 1
