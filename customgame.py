@@ -4,7 +4,8 @@
 #Created a room with a dragon
 #In order to escape the room, you need a magic shield
 #To get the shield, you need to find a riddle room, get 3/5 riddles right and then get the magic shield
-#If you don't have a magic shield when you enter the dragon room, you are now dinner for the dragon
+#If you don't get at least 3/5 riddles correct, you lose one of the items in your inventory
+#If you don't have the magic shield when you enter the dragon room, you are now dinner for the dragon
 #Happy riddling! 
 
 # Replace RPG starter project with this code when new instructions are live
