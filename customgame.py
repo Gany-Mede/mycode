@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
+#~~~~WHAT I DID~~~~
+#Created a room with a dragon
+#In order to escape the room, you need a magic shield
+#To get the shield, you need to find a riddle room, get 3/5 riddles right and then get the magic shield
+#If you don't have a magic shield when you enter the dragon room, you are now dinner for the dragon
+#Happy riddling! 
+
 # Replace RPG starter project with this code when new instructions are live
 
 def showInstructions():
@@ -71,10 +78,11 @@ currentRoom = 'Hall'
 
 showInstructions()
 
+#Riddle function
 def riddles():
     global inventory
     score = 0
-    print("WELCOME TO THE RIDLE ROOM!")
+    print("WELCOME TO THE RIDDLE ROOM!")
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     print("Get at least 3 questions right and you will win a prize, get less than 3 questions right and you will lose one of the items in your inventory!")
     answer1 = int(input("\nHow many months of the year have 28 days? "))
@@ -126,13 +134,14 @@ def riddles():
     else: 
         if not inventory:
             print("You bum, you have nothing to take!")
-        print(f"You lost: {inventory[-1]}")
-        inventory.pop()
+        else:
+            print(f"You lost: {inventory[-1]}")
+            inventory.pop()
 
 #Dragon Room
 def dragon():
     if 'shield' in inventory:
-        print("\n You enter the room, there is a dragon looking at you, you are looking at the dragon. \nThe dragon doesn't like when people stare at him... \nIt breathes FIRE... and.... YOU BLOCKED IT WITH YOUR MAGIC  SHIELD!!! \nThe dragon was not ready for that, got confused and flew away.")
+        print("\nYou enter the room, there is a dragon looking at you, you are looking at the dragon. \nThe dragon doesn't like when people stare at him... \nIt breathes FIRE... and.... YOU BLOCKED IT WITH YOUR MAGIC SHIELD!!! \nThe dragon was not ready for that, got confused and flew away.")
     else:
         print("\nDragon: 'Well, would you look at that, dinner just came in. \nYou are a little early. \nI just recently ate, but don't let that fool you... \nI'll fry you anyway and just eat you later.' \nDragon breathes fire... AND YOU ARE FRIED!!! \nGame over!  ")
         exit()
